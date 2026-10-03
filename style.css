@@ -75,11 +75,12 @@ body {
 
 .container {
   border: 2px solid var(--color-border);
-  padding: 35px 15px 35px 15px;
-  width: 22vw;
-  border-radius: 10px;
-  max-width: 400px;
-  min-width: 300px;
+  padding: 58px 23px 48px 23px;
+  width: 33vw;
+  border-radius: 15px;
+  max-width: 600px;
+  min-width: 400px;
+  border: 3px solid var(--color-border);
   box-shadow: 0px 0px 10px 0px rgba(74, 11, 11, 0.2);
   background-color: var(--background-color);
   transition:
@@ -88,10 +89,10 @@ body {
 }
 
 form {
-  margin-bottom: 38px;
+  margin-bottom: 57px;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
   transition: border-color 0.2s ease;
 }
 
@@ -103,8 +104,8 @@ form input {
 form label {
   /* flex: 0 0 33.33%; */
   width: 33.33%;
-  padding: 7px 10px;
-
+  padding: 11px 15px;
+  font-size: 24px;
   border-right: 1px solid var(--color-border);
   color: var(--secondary-text-color);
   border-bottom: 1px solid var(--color-border);
@@ -139,24 +140,24 @@ form input:checked + label {
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 25px;
+  font-size: 4.5rem;
+  margin-bottom: 38px;
   font-weight: 600;
   color: var(--primary-text-color);
 }
 
 p {
-  margin-bottom: 25px;
-  font-size: 1.1rem;
+  margin-bottom: 38px;
+  font-size: 1.65rem;
   color: var(--secondary-text-color);
 }
 
 button {
-  padding: 8px;
-  font-size: 0.9rem;
+  padding: 12px;
+  font-size: 1.35rem;
 
   background-color: var(--color-accent);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
 }
