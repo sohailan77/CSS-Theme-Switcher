@@ -23,6 +23,30 @@ body:has(#theme3:checked) {
   --color-border: #dedfc9;
 }
 
+body:has(#theme4:checked) {
+  --background-color: #fff1f5;
+  --primary-text-color: #831843;
+  --secondary-text-color: #9d6b7d;
+  --color-accent: #ec7fa9;
+  --color-border: #f3c4d4;
+}
+
+body:has(#theme5:checked) {
+  --background-color: #0b1f3a;
+  --primary-text-color: #f8fafc;
+  --secondary-text-color: #a9b9d0;
+  --color-accent: #4169e1;
+  --color-border: #29466f;
+}
+
+body:has(#theme6:checked) {
+  --background-color: #101510;
+  --primary-text-color: #eaff00;
+  --secondary-text-color: #b8c4a8;
+  --color-accent: #c7f000;
+  --color-border: #35402b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +81,7 @@ body {
   max-width: 400px;
   min-width: 300px;
   box-shadow: 0px 0px 10px 0px rgba(74, 11, 11, 0.2);
-background-color: var(--background-color);
+  background-color: var(--background-color);
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease;
@@ -66,10 +90,9 @@ background-color: var(--background-color);
 form {
   margin-bottom: 38px;
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   border: 1px solid var(--color-border);
-    transition:
-    border-color 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 form input {
@@ -78,17 +101,30 @@ form input {
 }
 
 form label {
+  /* flex: 0 0 33.33%; */
+  width: 33.33%;
   padding: 7px 10px;
 
   border-right: 1px solid var(--color-border);
   color: var(--secondary-text-color);
+  border-bottom: 1px solid var(--color-border);
   text-align: center;
-  flex: 1;
+  /* flex: 1; */
   margin: 0;
   cursor: pointer;
   transition:
     border-color 0.2s ease,
     color 0.2s ease;
+}
+
+form label:nth-of-type(3) {
+  border-right: none;
+}
+
+form label:nth-of-type(4),
+form label:nth-of-type(5),
+form label:nth-of-type(6) {
+  border-bottom: none;
 }
 
 form label:last-of-type {
